@@ -1,0 +1,190 @@
+.blok {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 0px;
+    height: auto;
+    }
+main > .container {
+    padding: 40px 100px 60px;
+    min-height: 580px;
+    max-width: 1100px;
+}
+.navbar > .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+header {
+    padding: 40px; /* some padding */
+    text-align: center; /* center the text */
+    background-image: url("/css/img/bgg.jpg");
+    background-size: cover;/* green background */
+    height: auto;
+    color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+header h1 {
+    font-size: 40px;
+}
+footer {
+    background-image: url("/css/img/ft.png");
+    color: white;
+    padding: 80px;
+    height: 70px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+.site-index {
+    align-content: center;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.row {
+    justify-content: center;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.fakeimg {
+    /*margin-bottom:20px ;*/
+    width: 250px;
+    margin-right: 20px;
+
+}
+
+.fakeimg img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+
+}
+
+.con {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-sm-8 {
+    width: 100%;
+}
+
+.col-sm-4 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
